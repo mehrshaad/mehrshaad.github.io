@@ -1,0 +1,284 @@
+/*<link rel="stylesheet" type="text/css" href="../CSS/Test.css">*/
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+
+
+
+.fire {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1000px;
+    height: 200px;
+
+    background-position: center center;
+    background-size: 1000px 200px;
+    border-radius: 10px;
+    font-family: 'Akronim';
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.fire:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.Blazing {
+    display: inline-block;
+    margin: 0;
+    color: rgb(255, 115, 0);
+    font-size: 100px;
+    line-height: 50px;
+    min-width: 50px;
+    outline: none;
+    vertical-align: middle;
+
+    text-shadow:
+        0 3px 20px red,
+        0 0 20px red,
+        0 0 10px orange,
+        4px -5px 6px yellow,
+        -4px -10px 10px yellow,
+        0 -10px 30px yellow;
+    animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+    0% {
+        text-shadow: 0 3px 20px red, 0 0 20px red,
+            0 0 10px orange,
+            0 0 0 yellow,
+            0 0 5px yellow,
+            -2px -5px 5px yellow,
+            4px -10px 10px yellow;
+    }
+
+    25% {
+        text-shadow: 0 3px 20px red, 0 0 30px red,
+            0 0 20px orange,
+            0 0 5px yellow,
+            -2px -5px 5px yellow,
+            3px -10px 10px yellow,
+            -4px -15px 20px yellow;
+    }
+
+    50% {
+        text-shadow: 0 3px 20px red, 0 0 20px red,
+            0 -5px 10px orange,
+            -2px -5px 5px yellow,
+            3px -10px 10px yellow,
+            -4px -15px 20px yellow,
+            2px -20px 30px rgba(255, 255, 0, 0.5);
+    }
+
+    75% {
+        text-shadow: 0 3px 20px red, 0 0 20px red,
+            0 -5px 10px orange,
+            3px -5px 5px yellow,
+            -4px -10px 10px yellow,
+            2px -20px 30px rgba(255, 255, 0, 0.5),
+            0px -25px 40px rgba(255, 255, 0, 0)
+    }
+
+    100% {
+        text-shadow: 0 3px 20px red, 0 0 20px red,
+            0 0 10px orange,
+            0 0 0 yellow,
+            0 0 5px yellow,
+            -2px -5px 5px yellow,
+            4px -10px 10px yellow;
+    }
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(180, 8, 8, 0);
+    background-image: url("https://cdn.wallpapersafari.com/76/59/DtIUv7.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+/* animation (named example) */
+@keyframes example {
+    from {
+        background-color: rgba(0, 255, 255, 0.671);
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+    
+    to {
+        background-color: rgba(255, 255, 0, 0.767);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        border-radius: 16px;
+        padding: 60px;
+    }
+}
+@keyframes example2 {
+    
+    from {
+        background-color: rgba(255, 255, 0, 0.767);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        border-radius: 16px;
+        padding: 60px;
+    }
+    to {
+        background-color: rgba(0, 255, 255, 0.671);
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+}
+
+.blur {
+    padding: 50px;
+    background-color: rgba(0, 255, 255, 0.671);
+    border-radius: 26px;
+    max-height: 140px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    animation:1s example2;
+    
+    
+}
+
+.blur:hover {
+    /* animation: reverse example2; */
+    animation: 1s example infinite alternate;
+    animation-timing-function: ease;
+    /* animation-direction: alternate; */
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: courier;
+    font-size: 160%;
+
+}
+
+/*id*/
+#p01 {
+    color: rgba(0, 255, 149, 0.993);
+    font-weight: bold;
+}
+
+/*class*/
+h1.head {
+    color: rgb(151, 252, 247);
+    background-color: #f6f6f63b;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+li {
+    color: invert;
+    border: 1px solid #7974743b;
+    background-color: #5553539c;
+    border-left-color: rgb(151, 205, 50);
+    border-left-width: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.one {
+    text-align: center;
+    border-style: outset;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 90px;
+    margin-left: 10px;
+    background-color: gray;
+    color: azure;
+    margin: auto;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+
+* {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.btn {
+    color:#fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    @media(min-width: 600px) {
+
+        margin: 0 1em 2em;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+.btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
