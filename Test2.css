@@ -4,8 +4,8 @@ body {
 }
 
 .social-container {
-  width: 400px;
-  margin: 5vh auto;
+  width: 500px;
+  margin: 3vh auto;
   text-align: center;
 }
 
@@ -61,4 +61,177 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+
+.wrapper {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 60%;
+  left: 50%;
+  margin: -250px;
+  filter: blur(0px);
+  font-size: 18px;
+  font-family: 'Chewy';
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.wrapper span {
+  background: red;
+  border-radius: 48%;
+  display: inline-block;
+}
+
+.wrapper p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.wrapper p:nth-child(1) {
+  filter: blur(2px);
+  position: absolute;
+  animation: skewing-child .2s ease-in-out infinite alternate;
+}
+
+.wrapper p:nth-child(1) span {
+  width: 50px;
+  height: 50px;
+  margin: -25px;
+  animation: moving 2s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+}
+
+.wrapper p:nth-child(2) {
+  filter: blur(2px);
+  position: absolute;
+  animation: squishing 1s ease-in-out infinite alternate;
+}
+
+.wrapper p:nth-child(2) span {
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  margin: -60px;
+  animation: skewing 2s 1.5s ease-in-out infinite;
+}
+
+.wrapper p:nth-child(3) {
+  filter: blur(2px);
+  position: absolute;
+  animation: squishing 5s ease-in-out infinite alternate;
+}
+
+.wrapper p:nth-child(3) span {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  margin: -120px;
+  animation: skewing 2s ease-in-out infinite;
+}
+
+.wrapper p:nth-child(4) {
+  filter: blur(2px);
+  position: absolute;
+  animation: squishing 2s ease-in-out infinite alternate;
+}
+
+.wrapper p:nth-child(4) span {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -170px;
+  animation: skewing 0.2s ease-in-out infinite;
+}
+
+@keyframes skewing {
+  0% {
+    transform: skewX(6deg);
+  }
+  10% {
+    transform: skewX(-6deg);
+  }
+  20% {
+    transform: skewX(4deg);
+  }
+  30% {
+    transform: skewX(-4deg);
+  }
+  40% {
+    transform: skewX(2deg);
+  }
+  50% {
+    transform: skewX(-6deg);
+  }
+  55% {
+    transform: skewX(6deg);
+  }
+  60% {
+    transform: skewX(-5deg);
+  }
+  65% {
+    transform: skewX(5deg);
+  }
+  70% {
+    transform: skewX(-4deg);
+  }
+  75% {
+    transform: skewX(4deg);
+  }
+  80% {
+    transform: skewX(-3deg);
+  }
+  85% {
+    transform: skewX(3deg);
+  }
+  90% {
+    transform: skewX(-2deg);
+  }
+  95% {
+    transform: skewX(2deg);
+  }
+  100% {
+    transform: skewX(1deg);
+  }
+}
+
+@keyframes skewing-child {
+  0% {
+    transform: skewX(-10deg);
+  }
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(-200px);
+  }
+  30% {
+    transform: translate(-45px);
+  }
+  70% {
+    transform: translate(45px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+
+@keyframes squishing {
+  10%,
+  40%,
+  80% {
+    transform: scale(1, 0.9);
+  }
+  0%,
+  30%,
+  60%,
+  100% {
+    transform: scale(0.9, 1);
+  }
 }
