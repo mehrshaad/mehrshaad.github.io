@@ -1,8 +1,4 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
-  background-color: rgba(255, 216, 180, 0.05);
-}
-
 .social-container {
   width: 500px;
   margin: 3vh auto;
@@ -109,8 +105,8 @@ body {
 }
 
 .wrapper p:nth-child(2) span {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   top: 50%;
   left: 50%;
   margin: -60px;
