@@ -37,7 +37,7 @@ body {
     }
 
     i {
-        color: #fff;
+        color: rgb(255, 255, 255);
         position: absolute;
         top: 21px;
         left: 21px;
@@ -52,7 +52,7 @@ body {
             content: " ";
             width: 60px;
             height: 60px;
-            border-radius: 100%;
+            border-radius: 40%;
             display: block;
             background: linear-gradient(45deg, $iconColor, $accent);
             transition: all $timing ease-out;
@@ -64,7 +64,7 @@ body {
         }
 
         &:hover i {
-            @include transformScale(2.2);
+            @include transformScale(2.5);
             color: $iconColor;
             background: -webkit-linear-gradient(45deg, $iconColor, $accent);
             -webkit-background-clip: text;

@@ -23,7 +23,7 @@ body {
 }
 
 .social-icons i {
-  color: #fff;
+  color: white;
   position: absolute;
   top: 21px;
   left: 21px;
@@ -41,7 +41,7 @@ body {
   content: " ";
   width: 60px;
   height: 60px;
-  border-radius: 100%;
+  border-radius: 40%;
   display: block;
   background: linear-gradient(45deg, #ffd8b4, #008f83);
   transition: all 265ms ease-out;
@@ -53,9 +53,9 @@ body {
 }
 
 .social-icons a:hover i {
-  transform: scale(2.2);
-  -ms-transform: scale(2.2);
-  -webkit-transform: scale(2.2);
+  transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -webkit-transform: scale(2.5);
   color: #ffd8b4;
   background: -webkit-linear-gradient(45deg, #ffd8b4, #008f83);
   -webkit-background-clip: text;
