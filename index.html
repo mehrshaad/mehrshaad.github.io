@@ -1,34 +1,221 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-  <title>Mehrshad Dadashzadeh</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link href="../Bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../Font Awesome/5.15.4/css/all.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../Bootstrap/5.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+    <title>Mehrshad Dadashzadeh</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href="Test.css">
-<link rel="stylesheet" type="text/css" href="Test2.css">
-<link rel="icon" href="icon.png">
-
 <body>
-    <h1>Mehrshad Dadashzadeh</h1>
-    <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/mehrshad-dadashzadeh-7053491b3/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://www.instagram.com/mehrshaad1379" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://github.com/mehrshaad" target="_blank"><i class="fa fa-github"></i></a></li>
-        <!-- <li><a href="https://www.linkedin.com/in/mehrshad-dadashzadeh-7053491b3/" target="_blank"><i class="fa fa-skype"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/mehrshad-dadashzadeh-7053491b3/" target="_blank"><i class="fa fa-steam"></i></a></li> -->
-        <li><a href="mailto:mehrdadashzadeh1379@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
-    </ul>
-</div>
-<div class="wrapper">
-  <p><span></span></p>
-  <p><span></span></p>
-  <p><span></span></p>
-  <p><span></span></p>
-  <p><b><sup>Working</sup> on <sub>it...</sub></b></p>
-</div>
+    <div id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top add-shadow blur-bg" id="header">
+        <img class="logo" src="../Images/signiture.png" />
+        <div class="container justify-content-center" id="nav-div">
+            <ul class="navbar-nav" id="nav-ul">
+                <li class="nav-item" data-menuanchor="main">
+                    <a role="presentation" class="nav-link" href="#main">main</a>
+                </li>
+                <li class="nav-item" data-menuanchor="skills">
+                    <a role="presentation" class="nav-link" href="#skills">skills</a>
+                </li>
+                <li class="nav-item" data-menuanchor="education">
+                    <a role="presentation" class="nav-link" href="#education">education</a>
+                </li>
+                <li class="nav-item" data-menuanchor="projects">
+                    <a role="presentation" class="nav-link" href="#projects">projects</a>
+                </li>
+                <li class="nav-item" data-menuanchor="interests">
+                    <a role="presentation" class="nav-link" href="#interests">interests</a>
+                </li>
+                <li class="nav-item" data-menuanchor="contact">
+                    <a role="presentation" class="nav-link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="slider" data-spy="scroll" data-target="#header" data-offset="0">
+        <section class="slide-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col">
+                        <img class="mx-auto d-block profile-pic"
+                            src="https://avatars.githubusercontent.com/u/60104751?v=4" />
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto d-block main-text">
+                            <h1>Hey there, I'm <b class="cursive-font">Mehrshad</b></h1>
+                            <p>Computer science student at the University of Guilan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-section" style="overflow: scroll;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm">
+                        <p><i class="fab fa-python"></i> Python</p>
+                        <div class="progress">
+                            <div class="progress-value python"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fab fa-js-square"></i> JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-value js"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fab fa-html5"></i> HTML</p>
+                        <div class="progress">
+                            <div class="progress-value html"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fab fa-css3-alt"></i> CSS</p>
+                        <div class="progress">
+                            <div class="progress-value css"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fab fa-git"></i> Git</p>
+                        <div class="progress">
+                            <div class="progress-value git"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-code"></i> C++</p>
+                        <div class="progress">
+                            <div class="progress-value cpp"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-code"></i> Django</p>
+                        <div class="progress">
+                            <div class="progress-value django"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fab fa-react"></i> React</p>
+                        <div class="progress">
+                            <div class="progress-value react"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-code"></i> PHP</p>
+                        <div class="progress">
+                            <div class="progress-value php"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-terminal"></i> Bash</p>
+                        <div class="progress">
+                            <div class="progress-value linux"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-code"></i> Matlab</p>
+                        <div class="progress">
+                            <div class="progress-value matlab"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-layer-group"></i> Photoshop</p>
+                        <div class="progress">
+                            <div class="progress-value photoshop"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-layer-group"></i> LaTeX</p>
+                        <div class="progress">
+                            <div class="progress-value latex"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p><i class="fas fa-layer-group"></i> Qt</p>
+                        <div class="progress">
+                            <div class="progress-value qt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col">
+                        education
+                        <!-- <div class="card" style="width: 18rem;">
+                            <img src="../Images/bg2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col">education</div>
+                </div>
+        </section>
+        <section class="slide-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col">
+                        projects
+                    </div>
+                    <div class="col">
+                        projects
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col">
+                        interests
+                    </div>
+                    <div class="col">
+                        interests
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-section">
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col">
+                        contact
+                    </div>
+                    <div class="col">
+                        contact
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <nav class="navbar navbar-light blur-bg">
+        <div class="container-fluid justify-content-around">
+            <p>hello</p>
+            <p>hello</p>
+        </div>
+    </nav> -->
+    <script src="../JavaScript/script.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url('../CSS/loading.css');
+@import url('../CSS/progressBar.css');
+
+:root {
+    --logo-margin: 12rem;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 1150px) {
+    :root {
+        --logo-margin: 2rem;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+    justify-content: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #797979;
+    background-image: url("../Images/bg2.jpg");
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav div ul li {
+    border: none;
+}
+
+nav div ul li a {
+    font-size: calc(4px + 0.5vw);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #585b5b;
+    letter-spacing: 2px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 10%;
+    transition: all ease-in-out 0.2s;
+}
+
+nav div ul li a.active {
+    background-color: #2adabc;
+    box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
+    transition: all ease 0.2s;
+}
+
+section {
+    padding: 5vh;
+    /* height: 100vh; */
+    transition: all ease 1s;
+    align-items: center;
+}
+
+
+/*id*/
+#header,
+#header.add-shadow {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+/*class*/
+.nav-link:hover {
+    background-color: #a9d6cf77;
+    transition: all ease-in-out 0.2s;
+}
+
+.blur-bg {
+    backdrop-filter: blur(5px);
+    /* background-image: url("../Images/bg2.jpg"); */
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+    margin-left: var(--logo-margin);
+    margin-right: calc(var(--logo-margin) * -1);
+    width: 10vw;
+    max-width: 125px;
+    z-index: 5;
+}
+
+.profile-pic {
+    transform: translateY(40%);
+    width: calc(80px + 15vw + 15vh);
+    max-width: 400px;
+    border-radius: 45%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 30px 90px;
+}
+
+/* .slide-section:nth-child(1) {
+        background-image: url("../Images/bg2.jpg");
+
+} */
+
+.slide-section:nth-child(2) {
+    background-image: url("../Images/76.jpg");
+}
+
+.main-text {
+    transform: translateY(80%);
+    width: calc(20vw + 20vh);
+    max-width: 500px;
+}
+
+.main-text h1 {
+    font-size: calc(14px + 3vw);
+    color: #1c3548;
+}
+
+.main-text p {
+    color: #000000;
+}
+
+.cursive-font {
+    font-family: "Dancing Script",
+        cursive;
+}
+
+.add-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+@media only screen and (max-width: 1150px) {
+    /*tablet*/
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    /*phone*/
+    .main-text {
+        transform: translateY(150%);
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*so small*/
+    .logo {
+        display: none;
+    }
+
+    section {
+        padding: 0%;
+    }
+}

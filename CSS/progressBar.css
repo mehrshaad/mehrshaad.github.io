@@ -1,0 +1,182 @@
+.progress {
+    background: rgba(150, 150, 150, 0.4);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    margin: 20px;
+    display: flex;
+    height: calc(2vh + 2vw);
+    min-height: 10px;
+    max-height: 50px;
+    width: 30vw;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+.progress-value {
+    animation: 3s ease-out forwards;
+    border-radius: 100px;
+    height: 80%;
+    width: 0;
+}
+
+.python {
+    background: #376F9E;
+    animation-name: load-90;
+}
+
+.js {
+    background: #F7DF1E;
+    animation-name: load-75;
+}
+
+.html {
+    background: #FF7C00;
+    animation-name: load-95;
+}
+
+.css {
+    background: #29A9DF;
+    animation-name: load-85;
+}
+
+.cpp {
+    background: rgb(172, 121, 255);
+    animation-name: load-70;
+}
+
+.react {
+    background: #4AD5FF;
+    animation-name: load-40;
+}
+
+.django {
+    background: #0F3F2F;
+    animation-name: load-60;
+}
+
+.flutter {
+    background: #54C5F8;
+    animation-name: load-30;
+}
+
+.matlab {
+    background: rgb(255, 173, 97);
+    animation-name: load-55;
+}
+
+.git {
+    background: #F0593D;
+    animation-name: load-75;
+}
+
+.linux {
+    background: #293036;
+    animation-name: load-65;
+}
+
+.photoshop {
+    background: #31A8FF;
+    animation-name: load-60;
+}
+
+.qt {
+    background: #41CD52;
+    animation-name: load-90;
+}
+
+.php {
+    background: #777BB3;
+    animation-name: load-30;
+}
+
+.latex {
+    background: #008181;
+    animation-name: load-65;
+}
+
+@keyframes load-30 {
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes load-35 {
+    100% {
+        width: 35%;
+    }
+}
+
+@keyframes load-40 {
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes load-45 {
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes load-50 {
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes load-55 {
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes load-60 {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes load-65 {
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes load-70 {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes load-75 {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes load-80 {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes load-85 {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes load-90 {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes load-95 {
+    100% {
+        width: 95%;
+    }
+}
