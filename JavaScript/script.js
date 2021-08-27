@@ -9,8 +9,15 @@ document.onreadystatechange = function () {
         document.querySelector("#loader").style.display = "none";
     }
 };
+
 //page loaded
 $(document).ready(function () {
+    window.mobile = false
+    window.fullPageJs = false
+    var width = window.matchMedia("(max-width: 990px)")
+    handleWidth(width)
+    width.addListener(handleWidth)
+
     //slider function
     $('#slider').fullpage({
         // menu: '#nav-ul',
@@ -18,19 +25,18 @@ $(document).ready(function () {
         sectionSelector: '.slide-section',
         loopBottom: true,
         fadingEffect: true,
+        responsiveWidth: 990,
         dragAndMove: 'fingersonly',
         anchors: ['main', 'skills', 'education', 'projects', 'interests', 'contact']
         // anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
     });
+
     //if window resizes, it will jumps to top
     window.onresize = function () {
-        jumpTo('main');
+        jumpToTag('');
+        // $("html, body").animate({ scrollTop: 0 }, "slow");
+        window.location.reload();
     };
-
-    window.mobile = false
-    var width = window.matchMedia("(max-width: 1150px)")
-    handleWidth(width)
-    width.addListener(handleWidth)
 });
 
 //scroll function
@@ -52,10 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function handleWidth(width, allowMobile = true) {
     if (width.matches && !allowMobile) {
         window.mobile = true
+        window.fullPageJs = false
         document.querySelector("#nav-ul").style.display = "none";
     }
     else {
         window.mobile = false
+        window.fullPageJs = true
         document.querySelector("#nav-ul").style.display = "contents";
     }
 }
@@ -75,6 +83,6 @@ function navEffect(bool, allowMobile = true) {
 }
 
 //jump to a tag
-function jumpTo(tag) {
+function jumpToTag(tag) {
     window.location.href = "#" + tag;
 }

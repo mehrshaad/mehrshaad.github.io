@@ -11,7 +11,7 @@
     min-height: 10px;
     max-height: 50px;
     width: 30vw;
-    min-width: 250px;
+    min-width: 225px;
     max-width: 500px;
 }
 
@@ -95,6 +95,16 @@
 .latex {
     background: #008181;
     animation-name: load-65;
+}
+
+.sql {
+    background: #2677C7;
+    animation-name: load-70;
+}
+
+.json {
+    background: #54856F;
+    animation-name: load-90;
 }
 
 @keyframes load-30 {
