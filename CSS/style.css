@@ -22,7 +22,7 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 990px) {
     :root {
         --logo-margin: 12rem;
     }
@@ -79,8 +79,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #2b413a;
-    background-image: url("../Images/bg.jpg");
+    background-color: #82968b;
 }
 
 * {
@@ -119,7 +118,7 @@ nav div ul li a {
 }
 
 nav div ul li a.active {
-    background-color: #2adabc;
+    background-color: #f3e7da;
     box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
     transition: all ease 0.2s;
 }
@@ -137,9 +136,13 @@ section {
     transition-duration: 0.5s;
 }
 
+#nav-ul {
+    display: contents;
+}
+
 /*class*/
 .nav-link:hover {
-    background-color: #a9d6cf77;
+    background-color: #f3e7da;
     transition: all ease-in-out 0.2s;
 }
 
