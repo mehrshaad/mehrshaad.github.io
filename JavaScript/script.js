@@ -74,12 +74,11 @@ function isMobile(reload = true) {
 function updateStyle() {
     if (window.mobile) {
         $('body').css({
-            'background-image': 'linear-gradient(to bottom, #82968b, #889687, #8e9685, #959683, #9c9583, #9c8e7e, #9c867a, #9a7f79, #8e7073, #7f6370, #6b586c, #544f67)'
         });
     }
     else {
         $('body').css({
-            'background-image': 'url("../Images/bg.jpg")'
+            // 'background-image': 'url("../Images/bg.jpg")'
         });
     };
 }

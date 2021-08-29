@@ -26,15 +26,18 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 0px) {
+
+    /*990*/
     /* main */
-    /* .slide-section:nth-child(1) {
-        background-image: url("../Images/bg.jpg");
-    } */
+    .slide-section:nth-child(1) {
+        background-color: #ffffff;
+        background-image: linear-gradient(to top, #ead6bd, #eed2ca, #e7d3d6, #dcd5da, #d6d6d6);
+    }
 
     /*skills*/
     .slide-section:nth-child(2) {
-        background-color: #ffeccc;
+        background-color: #ead6bd;
         background-image: linear-gradient(to bottom, #ead6bd, #decfb5, #d2c9ad, #c5c2a6, #b9bba0);
         overflow-y: scroll;
     }
@@ -47,19 +50,19 @@
 
     /* projects */
     .slide-section:nth-child(3) {
-        background-color: #00c9ae;
+        background-color: #b9bba0;
         background-image: linear-gradient(to top, #89a08c, #95a790, #a1ae95, #adb49a, #b9bba0);
     }
 
     /* interests */
     .slide-section:nth-child(4) {
-        background-color: #c3fcf1;
+        background-color: #89a08c;
         background-image: linear-gradient(to bottom, #89a08c, #7e9988, #749284, #698b81, #60847d);
     }
 
     /* contact */
     .slide-section:last-child {
-        background-color: #d3a89a;
+        background-color: #60847d;
         background-image: linear-gradient(to top, #41666d, #486e71, #4f7575, #577d79, #60847d);
     }
 }
@@ -79,7 +82,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #82968b;
+    background-color: #d6d6d6;
 }
 
 * {
@@ -179,7 +182,7 @@ section {
 }
 
 .main-text p {
-    color: #cccccc;
+    color: #000000;
 }
 
 .cursive-font {
@@ -240,7 +243,7 @@ section {
     }
 
     .slide-section:last-child {
-        min-height: 50vh !important;
+        min-height: 100vh !important;
     }
 
     .logo {
@@ -284,7 +287,8 @@ section {
     }
 
     .slide-section:last-child {
-        min-height: 50vh !important;
+        min-height: 100vh !important;
+        padding-bottom: auto !important;
     }
 
     .logo {

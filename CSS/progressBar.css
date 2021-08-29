@@ -19,11 +19,12 @@
     border-radius: 100px;
     height: 80%;
     width: 0;
+    background-color: #1c3548 !important;
 }
 
 .python {
     background: #376F9E;
-    animation-name: load-90;
+    animation-name: load-95;
 }
 
 .js {
@@ -38,7 +39,7 @@
 
 .css {
     background: #29A9DF;
-    animation-name: load-85;
+    animation-name: load-90;
 }
 
 .cpp {
@@ -53,7 +54,7 @@
 
 .django {
     background: #0F3F2F;
-    animation-name: load-60;
+    animation-name: load-55;
 }
 
 .flutter {
@@ -63,7 +64,7 @@
 
 .matlab {
     background: rgb(255, 173, 97);
-    animation-name: load-55;
+    animation-name: load-50;
 }
 
 .git {
@@ -78,7 +79,7 @@
 
 .photoshop {
     background: #31A8FF;
-    animation-name: load-60;
+    animation-name: load-50;
 }
 
 .qt {
@@ -98,12 +99,12 @@
 
 .sql {
     background: #2677C7;
-    animation-name: load-70;
+    animation-name: load-80;
 }
 
 .json {
     background: #54856F;
-    animation-name: load-90;
+    animation-name: load-100;
 }
 
 @keyframes load-30 {
@@ -187,5 +188,11 @@
 @keyframes load-95 {
     100% {
         width: 95%;
+    }
+}
+
+@keyframes load-100 {
+    100% {
+        width: 100%;
     }
 }
