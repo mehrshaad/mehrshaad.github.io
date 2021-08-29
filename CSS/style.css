@@ -7,7 +7,7 @@
 @import url('../CSS/socialMedia.css');
 
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -27,44 +27,40 @@
         --logo-margin: 12rem;
     }
 
-    /* .slide-section {
-        justify-content: center;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
-
     /* main */
     /* .slide-section:nth-child(1) {
-        background-image: url("../Images/bg2.jpg");
+        background-image: url("../Images/bg.jpg");
     } */
 
     /*skills*/
     .slide-section:nth-child(2) {
-        background-image: url("../Images/1.jpg");
+        background-color: #9ae7e7;
+        background-image: linear-gradient(to right top, #9ae7e7, #81d0cc, #69bab1, #52a497, #3c8e7d);
         overflow-y: scroll;
     }
 
     /* education */
     /* .slide-section:nth-child(3) {
-        background-image: url("../Images/77.jpg");
-        overflow-y: scroll;
+        background-color: #95b0b0;
+        background-image: linear-gradient(to left bottom, #95b0b0, #96afb6, #99aeba, #a0acbc, #a8aabc);
     } */
 
     /* projects */
     .slide-section:nth-child(3) {
-        background-image: url("../Images/2.jpg");
+        background-color: #95f7b2;
+        background-image: linear-gradient(to left bottom, #95f7b2, #79da97, #5dbe7d, #40a363, #1f884b);
     }
 
     /* interests */
     .slide-section:nth-child(4) {
-        background-image: url("../Images/4.jpg");
+        background-color: #fcfcd4;
+        background-image: linear-gradient(to top, #fcfcd4, #eefcdd, #e6fbe7, #e3f8ee, #e6f4f1);
     }
 
     /* contact */
     .slide-section:nth-child(5) {
-        background-image: url("../Images/3.jpg");
+        background-color: #00adb5;
+        background-image: linear-gradient(to top, #00adb5, #62bfc0, #93d1cd, #bee3de, #e6f4f1);
     }
 }
 
@@ -83,8 +79,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #797979;
-    background-image: url("../Images/bg2.jpg");
+    background-color: #2b413a;
+    background-image: url("../Images/bg.jpg");
 }
 
 * {
@@ -180,7 +176,7 @@ section {
 }
 
 .main-text p {
-    color: #000000;
+    color: #cccccc;
 }
 
 .cursive-font {
