@@ -3,10 +3,9 @@
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
-    position: relative;
+    display: flex;
     padding: 0 5px;
     margin: 20px;
-    display: flex;
     height: calc(2vh + 2vw);
     min-height: 10px;
     max-height: 50px;

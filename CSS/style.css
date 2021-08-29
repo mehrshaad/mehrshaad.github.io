@@ -4,25 +4,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 @import url('../CSS/loading.css');
 @import url('../CSS/progressBar.css');
-
-:root {
-    --logo-margin: 12rem;
-}
+@import url('../CSS/socialMedia.css');
 
 ::-webkit-scrollbar {
     width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 @media only screen and (min-width: 1150px) {
@@ -30,18 +27,48 @@
         --logo-margin: 12rem;
     }
 
+    /* .slide-section {
+        justify-content: center;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+
+    /* main */
     /* .slide-section:nth-child(1) {
         background-image: url("../Images/bg2.jpg");
     } */
 
     /*skills*/
     .slide-section:nth-child(2) {
-        background-image: url("../Images/76.jpg");
+        background-image: url("../Images/1.jpg");
         overflow-y: scroll;
+    }
+
+    /* education */
+    /* .slide-section:nth-child(3) {
+        background-image: url("../Images/77.jpg");
+        overflow-y: scroll;
+    } */
+
+    /* projects */
+    .slide-section:nth-child(3) {
+        background-image: url("../Images/2.jpg");
+    }
+
+    /* interests */
+    .slide-section:nth-child(4) {
+        background-image: url("../Images/4.jpg");
+    }
+
+    /* contact */
+    .slide-section:nth-child(5) {
+        background-image: url("../Images/3.jpg");
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1600px) {
     :root {
         --logo-margin: 2rem;
     }
@@ -103,11 +130,9 @@ nav div ul li a.active {
 
 section {
     padding: 5vh;
-    /* height: 100vh; */
     transition: all ease 1s;
     align-items: center;
 }
-
 
 /*id*/
 #header,
@@ -124,13 +149,12 @@ section {
 
 .blur-bg {
     backdrop-filter: blur(5px);
-    /* background-image: url("../Images/bg2.jpg"); */
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 .logo {
     margin-left: var(--logo-margin);
-    margin-right: calc(var(--logo-margin) * -1);
+    margin-right: calc(var(--logo-margin) * -1.5);
     width: 10vw;
     max-width: 125px;
     z-index: 5;
@@ -164,9 +188,21 @@ section {
         cursive;
 }
 
+.title {
+    text-align: center !important;
+    margin-top: 0%;
+    margin-bottom: 50px;
+    backdrop-filter: blur(10px);
+    border-radius: 25% 25% 0% 0%;
+    background: inherit;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .add-shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -174,6 +210,12 @@ section {
     /*phone*/
     ::-webkit-scrollbar {
         width: 20px;
+    }
+
+    [class*="fp-"],
+    [class*="section"],
+    section {
+        height: auto !important;
     }
 
     .main-text {
@@ -184,16 +226,22 @@ section {
         transform: translateY(10%);
     }
 
-
-    [class*="fp-"],
-    [class*="section"],
-    section {
-        min-height: 60vh !important;
-        height: auto !important;
-    }
-
     .progress {
         width: auto;
+    }
+
+    .title {
+        backdrop-filter: blur(0px);
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .slide-section:nth-child(1) {
+        min-height: 80vh !important;
+    }
+
+    .logo {
+        display: none;
     }
 }
 
@@ -204,6 +252,12 @@ section {
         width: 20px;
     }
 
+    [class*="fp-"],
+    [class*="section"],
+    section {
+        height: auto !important;
+    }
+
     .main-text {
         transform: translateY(0%);
     }
@@ -212,15 +266,22 @@ section {
         transform: translateY(0%);
     }
 
-
-    [class*="fp-"],
-    [class*="section"],
-    section {
-        height: auto !important;
-    }
-
     .progress {
         width: auto;
+    }
+
+    .title {
+        backdrop-filter: blur(0px);
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .slide-section:nth-child(1) {
+        min-height: 100vh !important;
+    }
+
+    .logo {
+        display: block;
     }
 }
 
@@ -232,6 +293,6 @@ section {
     }
 
     section {
-        padding: 0%;
+        padding: 3%;
     }
 }
