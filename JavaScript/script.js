@@ -17,11 +17,11 @@ $(document).ready(function () {
         $('body').css({ 'color': 'white' });
         $('.main-text h1').css({ 'color': 'rgb(221, 241, 237)' });
         $('.main-text p').css({ 'color': '#ffffff' });
-        window.mobile = false
+        window.mobile = true
         window.fullPageJs = false;
     }
     else {
-        window.mobile = true
+        window.mobile = false
         window.fullPageJs = true;
     };
     var width = window.matchMedia("(max-width: 990px)")
