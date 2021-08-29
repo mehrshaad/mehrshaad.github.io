@@ -244,7 +244,7 @@ section {
     }
 }
 
-@media only screen and (orientation:landscape) and (max-height: 720px) {
+@media only screen and (orientation:landscape) and (max-height: 600px) {
 
     /*landscape phone*/
     ::-webkit-scrollbar {
