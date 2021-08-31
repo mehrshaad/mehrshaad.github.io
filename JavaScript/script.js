@@ -16,6 +16,16 @@ document.onreadystatechange = function () {
     };
 };
 
+//highlighting nav item on section
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "nav-ul",
+        offset: 200
+    })
+    navbar_height = document.querySelector(".navbar").offsetHeight;
+    document.body.style.paddingTop = navbar_height + "px";
+});
+
 //page loaded
 $(document).ready(function () {
     //slider function
@@ -30,6 +40,11 @@ $(document).ready(function () {
         // anchors: ['main', 'skills', 'education', 'projects', 'interests', 'contact'] 
     });
 
+    //scroll function
+    // $(window).scroll(function () {
+    //     navEffect($(window).scrollTop() >= 30);
+    // });
+
     //if window resizes, it will jumps to top
     window.onresize = function () {
         isMobile()
@@ -37,21 +52,6 @@ $(document).ready(function () {
             reload();
         }
     };
-});
-
-//scroll function
-// $(window).scroll(function () {
-//     navEffect($(window).scrollTop() >= 30);
-// });
-
-//highlighting nav item on section
-document.addEventListener("DOMContentLoaded", function () {
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: "nav-ul",
-        offset: 200
-    })
-    navbar_height = document.querySelector(".navbar").offsetHeight;
-    document.body.style.paddingTop = navbar_height + "px";
 });
 
 //detects if it's running on mobile

@@ -5,6 +5,7 @@
 @import url('../CSS/loading.css');
 @import url('../CSS/progressBar.css');
 @import url('../CSS/socialMedia.css');
+@import url('../CSS/projects.css');
 
 :root {
     --logo-margin: 12rem;
@@ -52,6 +53,7 @@
     .slide-section:nth-child(3) {
         background-color: #b9bba0;
         background-image: linear-gradient(to top, #89a08c, #95a790, #a1ae95, #adb49a, #b9bba0);
+        overflow-y: auto;
     }
 
     /* interests */
@@ -116,7 +118,7 @@ nav div ul li a {
     letter-spacing: 2px;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
-    border-radius: 10%;
+    border-radius: 10px;
     transition: all ease 0.8s !important;
 }
 
