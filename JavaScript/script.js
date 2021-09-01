@@ -74,13 +74,12 @@ function isMobile(reload = false) {
 //update pages css
 function updateStyle() {
     if (window.mobile) {
-        $('body').css({
-        });
+        $('.project-box').addClass('project-box-mobile');
+        $('.project-box-mobile').removeClass('project-box');
     }
     else {
-        $('body').css({
-            // 'background-image': 'url("../Images/bg.jpg")'
-        });
+        $('.project-box-mobile').addClass('project-box');
+        $('.project-box').removeClass('project-box-mobile');
     };
 }
 
