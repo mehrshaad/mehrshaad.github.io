@@ -1,3 +1,9 @@
+:root {
+    --title-color: black;
+    --text-color: black;
+    --transition-time: 0.4s;
+}
+
 .project-box {
     background-color: #ecf5ce9a;
     margin: 10px 5px;
@@ -7,18 +13,19 @@
     min-width: 220px;
     overflow: auto;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: all ease-out 0.8s;
+    transition: all ease-out calc(var(--transition-time) * 2)
 }
 
 .project-box h4 {
-    transform: translateY(100%);
+    font-size: larger;
+    transform: translateY(120%);
     color: black;
-    transition: all ease 0.8s;
+    transition: all ease calc(var(--transition-time) * 2)
 }
 
 .project-box hr {
     color: transparent;
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box p {
@@ -26,38 +33,38 @@
     text-align: justify;
     color: transparent;
     font-size: calc(12px + 0.2vw);
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box button {
     background-color: rgba(0, 0, 0, 0);
-    color: transparent;
+    color: black;
     font-size: calc(14px + 0.2vw);
     border-radius: 15px;
     min-width: 90%;
-    transition: all ease 0.2s;
+    transition: all ease calc(var(--transition-time) / 2);
 }
 
 .project-box:hover {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     transform: scale(1.01);
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box:hover h4 {
     transform: translateY(0%);
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box:hover hr {
     color: black;
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box:hover p {
     color: black;
-    transition: all ease 1s;
+    transition: all ease calc(var(--transition-time) * 2)
 }
 
 .project-box:hover button {
@@ -65,10 +72,10 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
 
 .project-box:hover button:hover {
     background-color: rgba(0, 0, 0, 1);
-    transition: all ease 0.2s;
+    transition: all ease var(--transition-time);
 }
