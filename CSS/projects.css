@@ -11,6 +11,7 @@
     border-radius: 10px;
     min-height: 193px;
     min-width: 220px;
+    max-width: 420px;
     overflow: auto;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: all ease-out calc(var(--transition-time) * 2)
