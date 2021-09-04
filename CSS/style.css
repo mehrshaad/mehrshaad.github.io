@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Poppins&display=swap');
 @import url('../CSS/loading.css');
 @import url('../CSS/progressBar.css');
-@import url('../CSS/socialMedia.css');
 @import url('../CSS/projects.css');
+@import url('../CSS/socialMedia.css');
 
 :root {
     --logo-margin: 12rem;

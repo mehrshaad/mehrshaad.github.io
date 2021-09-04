@@ -52,6 +52,16 @@
     transition: all ease var(--transition-time);
 }
 
+.project-box p span {
+    border-bottom: 1px dashed transparent;
+    transition: border ease var(--transition-time);
+}
+
+.project-box span {
+    border-bottom: 1px dashed var(--title-color);
+    cursor: help;
+}
+
 .project-box button,
 .project-box-mobile button {
     background-color: rgba(0, 0, 0, 0.8);
@@ -87,6 +97,11 @@
 .project-box:hover p {
     color: var(--text-color);
     transition: all ease calc(var(--transition-time) * 2)
+}
+
+.project-box:hover p span {
+    border-bottom-color: var(--text-color);
+    transition: border-bottom ease var(--transition-time);
 }
 
 .project-box:hover button {
