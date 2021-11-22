@@ -16,7 +16,7 @@ document.onreadystatechange = function () {
     };
 };
 
-//highlighting nav item on section
+//highlighting nav item on section (disabled)
 document.addEventListener("DOMContentLoaded", function () {
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: "nav-ul",
