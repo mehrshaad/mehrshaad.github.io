@@ -101,7 +101,7 @@
 
 .project-box:hover p span {
     border-bottom-color: var(--text-color);
-    transition: border-bottom ease var(--transition-time);
+    transition: border-bottom ease var(--transition-time) calc(var(--transition-time) / 2);
 }
 
 .project-box:hover button {
