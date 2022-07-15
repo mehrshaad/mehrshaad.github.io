@@ -1,6 +1,7 @@
 :root {
     --title-color: black;
     --text-color: black;
+    --link-color: rgb(0, 67, 70);
     --transition-time: 0.4s;
 }
 
@@ -40,16 +41,20 @@
 }
 
 .project-box p,
-.project-box-mobile p {
+.project-box-mobile p{
     padding: 0px 10px;
     text-align: justify;
     color: var(--text-color);
 }
 
-.project-box p {
+.project-box p,
+.project-box a {
     font-size: calc(12px + 0.2vw);
     color: transparent;
     transition: all ease var(--transition-time);
+}
+.project-box a {
+    border-bottom: 0px dotted transparent;
 }
 
 .project-box p span {
@@ -94,9 +99,15 @@
     transition: all ease var(--transition-time);
 }
 
-.project-box:hover p {
+.project-box:hover p,
+.project-box:hover a {
     color: var(--text-color);
     transition: all ease calc(var(--transition-time) * 2)
+}
+.project-box:hover a:hover {
+    color: var(--link-color);
+    /* border-bottom-color: var(--text-color); */
+    transition: all ease calc(var(--transition-time))
 }
 
 .project-box:hover p span {
