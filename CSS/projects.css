@@ -90,7 +90,6 @@
 }
 
 .project-box:hover h4 {
-    font-size: medium;
     transform: translateY(0%);
     transition: all ease var(--transition-time);
 }
