@@ -2,14 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="#000" />
-    <link rel="icon" type="image/svg+xml" href="./ali-bg-w.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ali Dadashzadeh</title>
-    <script type="module" crossorigin src="/assets/index-Dlk8UfQk.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C-DG69qV.css">
+
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem("theme") || "system";
+          var isDark =
+            mode === "dark" ||
+            (mode === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var theme = isDark ? "dark" : "light";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          if (localStorage.getItem("scrollbar-hidden") !== "0")
+            document.documentElement.classList.add("no-scrollbar");
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Ali Dadashzadeh — Machine Learning & LLM/RAG Engineer</title>
+    <meta
+      name="description"
+      content="Ali Dadashzadeh — Machine Learning Engineer and LLM/RAG developer. MSc Computer Science researcher working on retrieval-augmented generation, knowledge graphs, and intelligent data-driven systems."
+    />
+    <meta
+      name="keywords"
+      content="Ali Dadashzadeh, Machine Learning Engineer, LLM, RAG, Retrieval-Augmented Generation, Knowledge Graphs, NLP, Deep Learning, AI Researcher, Python, Portfolio"
+    />
+    <meta name="author" content="Ali Dadashzadeh" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ali-dadashzadeh.ir/" />
+
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#e0fbfc"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#323232"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ali-dadashzadeh.ir/" />
+    <meta
+      property="og:title"
+      content="Ali Dadashzadeh — Machine Learning & LLM/RAG Engineer"
+    />
+    <meta
+      property="og:description"
+      content="ML Engineer and LLM/RAG developer building intelligent, data-driven systems across large-scale data, knowledge graphs, and modern language models."
+    />
+    <meta property="og:image" content="https://ali-dadashzadeh.ir/ali.png" />
+    <meta property="og:site_name" content="Ali Dadashzadeh" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ali Dadashzadeh — Machine Learning & LLM/RAG Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="ML Engineer and LLM/RAG developer building intelligent, data-driven systems."
+    />
+    <meta name="twitter:image" content="https://ali-dadashzadeh.ir/ali.png" />
+
+    <link rel="icon" type="image/png" href="./ali.png" />
+    <link rel="apple-touch-icon" href="./ali.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ali Dadashzadeh",
+        "url": "https://ali-dadashzadeh.ir/",
+        "image": "https://ali-dadashzadeh.ir/ali.png",
+        "jobTitle": "Machine Learning Engineer",
+        "description": "Machine Learning Engineer and LLM/RAG developer specializing in retrieval-augmented generation, knowledge graphs, and intelligent data-driven systems.",
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Brock University" },
+          { "@type": "CollegeOrUniversity", "name": "University of Guilan" }
+        ],
+        "knowsAbout": [
+          "Machine Learning",
+          "Retrieval-Augmented Generation",
+          "Large Language Models",
+          "Knowledge Graphs",
+          "Natural Language Processing",
+          "Deep Learning"
+        ],
+        "sameAs": [
+          "https://github.com/mehrshaad",
+          "https://www.linkedin.com/in/dadashzadeh-ali/",
+          "https://scholar.google.com/citations?user=6Q63S3UAAAAJ&hl=en"
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-l3GCYJ4Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dktj5x7_.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
