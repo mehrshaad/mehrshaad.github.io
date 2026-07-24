@@ -21,6 +21,27 @@
       })();
     </script>
 
+    <!-- Google Analytics (GA4, gtag.js) — property "Ali Dadashzadeh Portfolio".
+         Loaded async and only on the live domain, so localhost/dev traffic is
+         never counted. -->
+    <script>
+      (function () {
+        var LIVE_HOSTS = ["ali-dadashzadeh.ir", "www.ali-dadashzadeh.ir"];
+        if (LIVE_HOSTS.indexOf(location.hostname) === -1) return;
+        var GA_ID = "G-T61P8ERWYQ";
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag("js", new Date());
+        window.gtag("config", GA_ID);
+      })();
+    </script>
+
     <title>Ali Dadashzadeh — Machine Learning & LLM/RAG Engineer</title>
     <meta
       name="description"
@@ -100,8 +121,10 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-l3GCYJ4Y.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dktj5x7_.css">
+    <script type="module" crossorigin src="/assets/index-BP27KmR4.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-D2HaOZHF.js">
+    <link rel="modulepreload" crossorigin href="/assets/antd-BkXFZnWh.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-NDR9WVuH.css">
   </head>
   <body>
     <div id="root"></div>

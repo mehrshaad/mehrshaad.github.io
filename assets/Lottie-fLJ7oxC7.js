@@ -1,0 +1,1 @@
+import{a as u}from"./antd-BkXFZnWh.js";import{_ as f}from"./lottie-ClicHOWG.js";function x({animationData:t,height:e,width:r,speed:s=.2,loop:o=!0,autoplay:i=!0,isPaused:a=!1,rendererSettings:n={preserveAspectRatio:"xMidYMid slice"}}){const p={speed:s,loop:o,autoplay:i,animationData:t,rendererSettings:n};return u.jsx(f,{options:p,width:r,height:e,isPaused:a})}export{x as R};
